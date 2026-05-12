@@ -1,0 +1,24 @@
+{
+  "row_count": 70,
+  "risk": {
+    "High": 40,
+    "Medium": 30
+  },
+  "confidence": {
+    "Medium": 31,
+    "High": 31,
+    "Low": 8
+  },
+  "top_categories": {
+    "E-commerce": 5,
+    "News / tech": 4,
+    "News / business": 4,
+    "News / magazine": 3,
+    "News / newspaper": 3,
+    "Streaming": 3,
+    "Social / media": 2,
+    "Private/community chat": 2,
+    "News / wire": 2,
+    "Entertainment news": 2
+  }
+}

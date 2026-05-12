@@ -1,0 +1,71 @@
+Domain,Risk severity,Claude access status,Live fetch impacted?,Primary barrier,Recommended workaround,Confidence
+reddit.com,High,Likely blocked / unreliable,Partial,Crawler restrictions; dynamic/login surfaces,"Paste thread text, use screenshots/export, or use official Reddit/API-permitted source.",Medium
+x.com,High,Confirmed broad bot block,Yes,Wildcard robots block; login/dynamic pages,Paste post/thread text; use screenshots; use public article mirrors when available.,High
+linkedin.com,High,Confirmed automated-access restricted,Yes,Terms/robots automated access prohibition,Paste post/profile text or use screenshots; rely on user-provided exports.,High
+instagram.com,High,Auth-gated / unreliable,Yes,Login wall; JS; anti-bot,"Paste caption/comments, screenshots, or public embeds.",Medium
+facebook.com,High,Auth-gated / unreliable,Yes,Login wall; JS; anti-bot,Paste content or screenshots; use public page exports where allowed.,Medium
+tiktok.com,High,Unreliable / mixed,Partial,Heavy JS; app/login prompts; anti-bot,Paste transcript/caption/comments or use screenshots.,Medium
+quora.com,Medium,Unreliable / mixed,Partial,Login wall; anti-bot,Paste the question/answer text directly.,Medium
+discord.com,High,Auth-gated,Yes,Private workspace/session required,"Export messages, paste content, or use a permitted connector/API.",High
+slack.com,High,Auth-gated,Yes,Private workspace/session required,Use a connector/export or paste relevant messages.,High
+docs.google.com / drive.google.com,High,Auth-gated unless public,Yes,Permissions/session required,Upload/export as PDF/DOCX/TXT or make a public readable copy.,High
+notion.so,High,Auth-gated unless public,Yes,Permissions/session required,Export Markdown/PDF or share a public static page.,High
+figma.com,High,Auth-gated / not text-readable,Yes,Permissions; canvas rendering,Export frames/screenshots/PDF or provide a share link plus screenshots.,High
+medium.com,Medium,Unreliable / mixed,Partial,Membership/paywall; dynamic rendering,Paste post text or use the author’s canonical blog if available.,Medium
+substack.com,Medium,Unreliable / mixed,Partial,Paid posts; email-only posts; dynamic pages,Paste article text or export email content.,Medium
+patreon.com,High,Auth/subscription-gated,Yes,Paid member wall,Paste content you have rights to access.,High
+theatlantic.com,High,Confirmed Claude live-fetch block,Yes,Robots disallow for Claude agents,Paste article text or use licensed/public excerpts.,High
+wired.com,High,Confirmed Claude live-fetch block,Yes,Robots disallow for Claude agents,Paste article text or use available excerpts/official RSS where allowed.,High
+reuters.com,High,Confirmed non-allowlisted bot block,Yes,Only allowlisted bots permitted; all others blocked,"Use article excerpts, licensed sources, or cite other accessible reports.",High
+apnews.com,High,Confirmed Claude live-fetch block,Yes,Robots disallow for Claude agents,Use short excerpts or alternative accessible syndication pages.,High
+theguardian.com,High,Confirmed Claude live-fetch block,Yes,Robots disallow + LLM use restriction,Paste article text or use public RSS/excerpts within rights limits.,High
+newyorker.com,High,Confirmed Claude live-fetch block,Yes,Robots disallow for Claude agents,Paste article text or use article excerpts.,High
+theverge.com,High,Confirmed Claude live-fetch block,Yes,Robots disallow for Claude agents,Paste article text or use accessible article snippets.,High
+vox.com,High,Confirmed Claude crawler block; live agent unclear,Partial,Robots disallow for ClaudeBot/Claude-Web,Paste article text or use accessible excerpts.,Medium
+ft.com,High,Confirmed Claude crawler block; live agent unclear,Partial,Robots disallow + AI/ML prohibition statement,Paste text you have access to; use licensed/public summaries.,High
+washingtonpost.com,High,Confirmed Claude crawler block; live agent unclear,Partial,Robots disallow for Claude agents,Paste article text or use accessible excerpts/alternate coverage.,High
+wsj.com,High,Confirmed Claude crawler block; live agent unclear,Partial,Robots disallow for Claude agents,Paste article text or use licensed/public summaries.,Medium
+nytimes.com,High,Likely restricted,Partial,Paywall; anti-scraping; AI-crawler conflict,Paste article text or use accessible excerpts/official summaries.,Medium
+economist.com,High,Confirmed/likely Claude crawler restriction,Partial,Robots disallow + paywall,Paste article text or use licensed summaries.,Medium
+bloomberg.com,High,Paywall / anti-bot unreliable,Partial,"Paywall, dynamic app shell, anti-bot",Use publicly accessible Bloomberg snippets or paste subscribed content you may use.,Medium
+businessinsider.com,High,Confirmed Claude crawler block; live agent unclear,Partial,Robots disallow for Anthropic/Claude crawler,Paste article text or use accessible excerpts.,High
+forbes.com,High,Confirmed broad bot block via TollBit robots,Yes,Wildcard robots disallow,Use accessible excerpts or paste content.,High
+politico.com,Medium,Confirmed ClaudeBot block; live agent unclear,Partial,Robots disallow for ClaudeBot,Use accessible excerpts or paste full text.,Medium
+axios.com,Medium,No explicit Claude block found; API/auth paths blocked,Partial,Core/API/login blocked; no Claude-specific block shown,"Try direct link; if failed, paste text.",Low
+theinformation.com,High,Paywall + AI training bot restrictions,Partial,Subscription paywall; AI training bot restrictions,Paste article text or summarize from accessible snippets.,Medium
+statnews.com,Medium,Confirmed Claude crawler block; live agent unclear,Partial,Robots disallow for AI bots,Use accessible excerpts or paste article text.,High
+rollingstone.com,High,Confirmed broad bot block via TollBit robots,Yes,Wildcard robots disallow,Paste article text or use accessible snippets.,High
+variety.com,High,Confirmed broad bot block via TollBit robots,Yes,Wildcard robots disallow,Paste article text or use accessible snippets.,High
+nationalgeographic.com,Medium,Unreliable / mixed,Partial,Search/API/magazine paths blocked; paywall possible,Try direct page; paste content if fetch fails.,Low
+cnn.com,Medium,Robots fetch denied to search bot; likely unreliable,Partial,Robots denial to current search bot; dynamic site,Use accessible article text/snippets or paste content.,Medium
+bbc.com,Medium,Robots fetch denied to search bot; likely unreliable,Partial,Robots denial to current search bot; regional/video restrictions,Try direct link; use article text if fetch fails.,Medium
+arstechnica.com,Medium,Robots fetch 403; likely unreliable,Partial,403 on robots fetch; possible bot protection,Use article excerpts or paste content.,Medium
+techcrunch.com,Medium,Unverified / likely mixed,Partial,Dynamic/paywall/bot controls possible,Try direct page; paste if failed.,Low
+engadget.com,Medium,Unverified / likely mixed,Partial,Dynamic/bot controls possible,Try direct page; paste if failed.,Low
+ifixit.com,Medium,Historical ClaudeBot issue; likely stricter now,Partial,Crawler load; robots/crawl-delay controls,Use direct public guide pages; paste page text if needed.,Medium
+readthedocs.org,Medium,Historical ClaudeBot issue; likely mixed,Partial,Crawler load; potential robots controls,Try docs URL; use raw/source docs where available.,Medium
+freelancer.com,Medium,Historical ClaudeBot issue; likely restricted/mixed,Partial,Crawler load; login marketplace,Paste listing/project text or use public exports.,Medium
+amazon.com,High,Unreliable / anti-bot,Partial,Bot protection; dynamic prices/reviews,Use a shopping/search tool or paste product details; verify prices manually.,Medium
+walmart.com,Medium,Unreliable / mixed,Partial,Search/API/cart/account blocked; dynamic retail,Use direct product links with manual price verification.,Medium
+target.com,Medium,Unreliable / mixed,Partial,Cart/account/search/deals/shop paths blocked,Use manual verification for price/availability; paste details if needed.,Medium
+bestbuy.com,Medium,Unreliable / mixed,Partial,"APIs, cart, availability, pricing paths blocked",Use manual verification for price/stock; paste details if needed.,Medium
+ebay.com,High,Confirmed automated-agent restricted,Yes,Terms/robots automated access prohibition,Use manual browsing; paste listing details.,High
+flipkart.com,Medium,Unreliable / mixed,Partial,Dynamic retail; bot/region controls,Manual price/stock verification; paste product details.,Low
+myntra.com,Medium,Likely blocked / unreliable,Partial,Bot protection/site maintenance response,Manual verification; paste product details.,Medium
+ajio.com,Medium,Likely blocked / unreliable,Partial,Dynamic retail; anti-bot likely,Manual verification; paste product details.,Low
+netflix.com,High,Auth/subscription-gated,Yes,Login/subscription and regional catalog,Use public title pages or paste title details; verify availability in your account/region.,High
+primevideo.com,High,Auth/subscription-gated,Yes,Login/subscription and regional catalog,Use public title pages or paste details; verify in account/region.,High
+hotstar.com,High,Auth/subscription-gated / unreliable,Yes,Login/subscription; app/dynamic rendering,Use public title pages or paste details; verify in app/region.,High
+youtube.com,Medium,Unreliable / mixed,Partial,Dynamic comments; captions availability; JS,"Provide transcript, captions, or comments export.",Medium
+twitch.tv,Medium,Unreliable / mixed,Partial,Live/auth/dynamic chat,Provide VOD transcript/chat export or screenshots.,Medium
+spotify.com,Medium,Auth/dynamic mixed,Partial,Login/app rendering; region rights,Use public links plus manual verification; paste needed metadata.,Medium
+pinterest.com,Medium,Auth-gated / unreliable,Partial,Login wall; image grid JS,Use screenshots/exported images or paste pin text.,Medium
+google.com/search,Medium,Usually inaccessible / not suitable,Yes,Search result anti-scraping and personalization,Ask for a web search through the assistant rather than providing a Google SERP URL.,High
+github.com,High,Auth-gated unless public,Yes,Private repo permissions,"Use a connector, make repo public, or upload relevant files.",High
+github.com,High,Auth-gated unless public,Yes,Private org/repo permissions,Use connector/export or paste issue/PR text.,High
+notion.site,Medium,Mixed / JS-rendered,Partial,JS rendering and blocks/images,Export Markdown/PDF; use a static public page if possible.,Medium
+google.com/maps,High,Usually inaccessible / not suitable,Yes,JS app; anti-scraping; ToS,Use the assistant’s local/search tools or provide specific place links/details.,High
+imdb.com,Medium,Unreliable / mixed,Partial,Dynamic pages; bot controls possible,Use public data snippets or paste details.,Low
+goodreads.com,Medium,Unreliable / mixed,Partial,Login/social/reviews; Amazon-owned bot controls possible,Paste reviews/list text or use exported data.,Low
+stackoverflowteams.com / stackoverflow.com,High,Auth-gated unless public,Yes,Private team permissions,Use public question URL or paste/export private content.,High
+researchgate.net,Medium,Auth-gated / unreliable,Partial,Login wall; PDFs often gated,"Use DOI, arXiv, publisher PDF, or upload the paper.",Medium
