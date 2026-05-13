@@ -1,3 +1,5 @@
+Work in progress and not reviewed yet, use with caution. 
+
 # LLM Browseability Index
 
 A practical dataset of domains that are commonly **blocked, degraded, paywalled, login-gated, JavaScript-heavy, Cloudflare-protected, or otherwise unreliable** for Claude-style web retrieval.
